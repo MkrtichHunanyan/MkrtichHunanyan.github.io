@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;   
+}
+body, 
+.snake{
+    background-color: #414141;
+}
+#game-board{
+    border-radius:100px;
+    display:grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows:repeat(20, 20px);
+}
+.game-border-1{
+    border:#373944 solid 35px;
+    border-radius: 60px;
+    box-shadow: inset 0 0 0 10px, #595f43;
+}
+
+.game-border-2{
+    border:#446038 solid 18px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 10px, #abb78a;
+}
+
+.game-border-3{
+    border:#5e8649 solid 30px;
+    border-radius: 9px;
+    box-shadow: inset 0 0 0 10px, #8b966c;
+}
+#instruction-text{
+    position: absolute;
+    top:60%;
+    color:#333 ;
+    width:300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin:0px;
+}
+
+.scores{
+    display: flex;
+    justify-content:space-between;
+}
+
+#logo{
+    position: absolute;
+}
+#score{
+    color:#abb78a;
+}
+
+#score,
+#highScore{
+    font-size:40px;
+    font-weight: bolder;
+    margin: 10px, 0px;
+}
+
+#highScore{
+    color: #c4cfa3;
+    display: none;
+}
+
+#logo,
+.game-border-3{
+    background-color: #749b60;
+}
+.snake{
+    border: #749b60 1px solid;
+    background-color: #3a4936;
+}
+
+.food{
+    background-color:#445e3d;
+}
+
+.wall{
+    background-color:#000;
+}
+
+.level-text{
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 75px;
+    top: 47%;
+    opacity: 0;
+}
